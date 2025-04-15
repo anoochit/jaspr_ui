@@ -24,8 +24,8 @@ class Select extends StatelessComponent {
     yield select(
         classes: 'select '
             '${border == true ? 'select-bordered' : ''} '
-            '${color != null ? '${color!.className}' : ''} '
-            '${size != null ? '${size!.className}' : ''} '
+            '${color != null ? color!.className : ''} '
+            '${size != null ? size!.className : ''} '
             'w-full max-w-xs',
         onChange: (value) => onChange?.call(value),
         disabled: disabled,
