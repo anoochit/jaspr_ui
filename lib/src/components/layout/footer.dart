@@ -382,7 +382,7 @@ class FooterCenteredWithCopyrightSocialIcons extends StatelessComponent {
       [
         aside([
           icon,
-          p(classes: 'font-bold', [text('$company')]),
+          p(classes: 'font-bold', [text(company)]),
           p([text('Copyright © ${DateTime.now().year} - All right reserved.')])
         ]),
         nav([

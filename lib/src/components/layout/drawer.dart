@@ -77,7 +77,7 @@ class Drawer extends StatelessComponent {
       [
         // Checkbox input for drawer toggle (hidden)
         input(
-            id: '$id', type: InputType.checkbox, classes: 'drawer-toggle', []),
+            id: id, type: InputType.checkbox, classes: 'drawer-toggle', []),
 
         // Main content area
         div(classes: 'drawer-content min-h-screen', content),
@@ -89,7 +89,7 @@ class Drawer extends StatelessComponent {
             // Overlay label for closing the drawer
             label(
                 classes: 'drawer-overlay',
-                attributes: {'for': '$id', 'aria-label': 'close sidebar'},
+                attributes: {'for': id, 'aria-label': 'close sidebar'},
                 []),
             // Spread sidebar components
             ...sidebar,
@@ -145,7 +145,7 @@ class DrawerButton extends StatelessComponent {
             'btn btn-circle btn-ghost drawer-button ${lgHidden == true ? 'lg:hidden' : ''}',
         attributes: {
           'type': 'checkbox',
-          'for': '$id',
+          'for': id,
           'aria-label': 'open sidebar'
         },
         [
